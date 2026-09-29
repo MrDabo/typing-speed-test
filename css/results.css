@@ -1,0 +1,71 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main figure img {
+  display: block;
+  width: 100px;
+}
+
+main figure figcaption {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+main figure + p {
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  padding: 1.2rem;
+}
+
+main section div {
+  border: 1px solid var(--Neutral-0);
+  padding: 1.2rem;
+  border-radius: 5px;
+}
+
+main section div .label {
+}
+
+main section div .value {
+  padding-top: 0.5rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+main button {
+  display: var(--Neutral-0);
+  padding: 1rem 1.5rem;
+  font: inherit;
+  font-weight: 600;
+  border: none;
+  border-radius: 15px;
+}
+
+@media (min-width: 600px) {
+  main section {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.2rem;
+  }
+
+  main section div{
+    width: 150px;
+  }
+
+  
+}

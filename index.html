@@ -1,33 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="javascript/script.js"></script>
     <title>Typing Speed Test</title>
   </head>
-  <body>
-    <header>
-      <figure class="logo">
-        <img
-          src="assets/images/logo-small.svg"
-          alt="logo"
-          title="Typing Speed Test"
-          class="mobile"
-        />
-        <img
-          src="assets/images/logo-large.svg"
-          alt="logo"
-          title="Typing Speed Test"
-          class="desktop"
-        />
-      </figure>
 
-      <figure class="best">
-        <img src="assets/images/icon-personal-best.svg" alt="" />
-        <figcaption><span>Personal</span>Best: <b>92WPM</b></figcaption>
-      </figure>
-    </header>
+  <body>
     <main>
       <aside>
         <section class="details">
@@ -40,38 +23,52 @@
         <section class="controls-desktop">
           <div>
             <p>Difficulty:</p>
-            <button>Easy</button>
-            <button>Medium</button>
-            <button>Hard</button>
+            <button class="selected difficulty-button">Easy</button>
+            <button class="difficulty-button">Medium</button>
+            <button class="difficulty-button">Hard</button>
           </div>
           <div>
             <p>Mode:</p>
-            <button>Timed(60s)</button>
-            <button>Passage</button>
+            <button class="selected mode-button">Timed(60s)</button>
+            <button class="mode-button">Passage</button>
           </div>
         </section>
         <section class="controls-mobile">
-            <select name="" id="">
-                <option value="">Hard</option>
-                <option value="">Medium</option>
-                <option value="">Easy</option>
-            </select>
-            <select name="" id="">
-                <option value="">Timed(60s)</option>
-                <option value="">Passage</option>
-            </select>
+          <select id="difficulty-select">
+            <option value="easy" selected>Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+          <select id="mode-select">
+            <option value="timed" selected>Timed(60s)</option>
+            <option value="passage">Passage</option>
+          </select>
         </section>
       </aside>
-      <section class="text-area">
+      <section id="text-area" class="text-area">
         <div>
-            <button>Start Typing Text</button>
-            <p>Or click the text and start typing</p>
+          <button>Start Typing Text</button>
+          <p>Or click the text and start typing</p>
         </div>
-        <article>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio ab, odit nulla aperiam omnis aspernatur officiis corporis molestias ratione totam? Sapiente quia vitae consequatur consectetur quis sint. Ea, minus voluptatibus.
-        Vel ab, recusandae libero at facere iure explicabo earum laborum culpa ad dignissimos qui reprehenderit minus quia adipisci cumque incidunt porro accusantium ex illo quibusdam excepturi quos vero in. Quos.
-        Unde architecto quidem explicabo repellat, illo accusantium voluptates rerum aspernatur optio odio iure ad velit hic eveniet nisi voluptatum, laborum possimus nostrum corporis est magni? Aspernatur quo officia saepe natus?
-        Perferendis tempore repudiandae magni hic nihil ratione facilis, adipisci error reprehenderit quasi, sunt dignissimos fuga rerum nobis repellat fugiat nostrum eveniet corporis debitis? Esse dicta similique, est molestias iusto culpa.
-        Quis nihil temporibus delectus! Expedita aperiam libero totam quisquam hic qui amet et numquam nobis cum rem nihil doloribus possimus enim at iusto corrupti illum accusantium porro fugiat, saepe obcaecati?</article>
+        <article>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          ab, odit nulla aperiam omnis aspernatur officiis corporis molestias
+          ratione totam? Sapiente quia vitae consequatur consectetur quis sint.
+          Ea, minus voluptatibus. Vel ab, recusandae libero at facere iure
+          explicabo earum laborum culpa ad dignissimos qui reprehenderit minus
+          quia adipisci cumque incidunt porro accusantium ex illo quibusdam
+          excepturi quos vero in. Quos. Unde architecto quidem explicabo
+          repellat, illo accusantium voluptates rerum aspernatur optio odio iure
+          ad velit hic eveniet nisi voluptatum, laborum possimus nostrum
+          corporis est magni? Aspernatur quo officia saepe natus? Perferendis
+          tempore repudiandae magni hic nihil ratione facilis, adipisci error
+          reprehenderit quasi, sunt dignissimos fuga rerum nobis repellat fugiat
+          nostrum eveniet corporis debitis? Esse dicta similique, est molestias
+          iusto culpa. Quis nihil temporibus delectus! Expedita aperiam libero
+          totam quisquam hic qui amet et numquam nobis cum rem nihil doloribus
+          possimus enim at iusto corrupti illum accusantium porro fugiat, saepe
+          obcaecati?
+        </article>
       </section>
     </main>
   </body>

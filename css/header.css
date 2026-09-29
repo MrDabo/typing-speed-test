@@ -1,0 +1,37 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+header .logo .desktop {
+  display: none;
+}
+
+header .logo .mobile {
+  display: block;
+}
+
+header .best {
+  display: flex;
+  align-items: center;
+}
+header .best figcaption {
+  white-space: nowrap;
+}
+header .best figcaption span {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  header .logo .desktop {
+    display: block;
+  }
+  header .logo .mobile {
+    display: none;
+  }
+
+  header .best figcaption span {
+    display: inline;
+  }
+}
