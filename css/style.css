@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "Sora";
+  src: url(../assets/fonts/Sora-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Sora";
+  src: url(../assets/fonts/Sora-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Sora";
+  src: url(../assets/fonts/Sora-Bold.ttf);
+  font-weight: 700;
+}
+
+:root {
+  --Neutral-900: hsl(0, 0%, 7%);
+  --Neutral-800: hsl(0, 0%, 15%);
+  --Neutral-500: hsl(240, 3%, 46%);
+  --Neutral-400: hsl(240, 1%, 59%);
+  --Neutral-0: hsl(0, 0%, 100%);
+  --Blue-600: hsl(214, 100%, 55%);
+  --Blue-400: hsl(214, 100%, 55%);
+  --Red-500: hsl(354, 63%, 57%);
+  --Green-500: hsl(140, 63%, 57%);
+  --Yellow: hsl(49, 85%, 70%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sora";
+  background-color: var(--Neutral-900);
+  color: var(--Neutral-0);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+header .logo .desktop {
+  display: none;
+
+}
+header .logo .mobile {
+  display: block;
+}
+
+header .best {
+  display: flex;
+  align-items: center;
+}
+header .best figcaption {
+  white-space: nowrap;
+}
+header .best figcaption span {
+  display: none;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  border-bottom: 2px solid var(--Neutral-400);
+  padding-bottom: 1em;
+}
+
+aside .details {
+  display: flex;
+  justify-content: space-between;
+}
+
+aside .details p{
+  padding-right: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+aside .details p .label{
+  opacity: 0.5;
+}
+
+aside .details p .value{
+  font-weight: 700;
+}
+
+aside .controls-mobile {
+  display: flex;
+  gap: 0.4em;
+}
+aside .controls-mobile select{
+  width: 100%;
+  background-color: rgb(0 0 0 / 0);
+  border-radius: 5px;
+  color: white;
+  font: inherit;
+  text-align: center;
+}
+
+aside .controls-desktop {
+  display: none;
+}
+
+.text-area{
+  position: relative;
+}
+
+.text-area div{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(255 255 255 / 0.5);
+}
+
+
+
+@media (min-width: 600px) {
+header .logo .desktop {
+  display: block;
+
+}
+header .logo .mobile {
+  display: none;
+}
+
+  header .best figcaption span {
+  display: inline;
+}
+aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+aside .details p{
+  padding-right: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+aside .details p .label{
+  opacity: 0.5;
+}
+
+aside .details p .value{
+  font-weight: 700;
+}
+aside .controls-mobile {
+  display: none;
+
+}
+aside .controls-desktop {
+  display:flex;
+}
+aside .controls-desktop div{
+  display:flex;
+}
+aside .controls-desktop div p{
+  margin-right: 0.5em;
+}
+aside .controls-desktop div button{
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid var(--Neutral-400);
+  color: white;
+  padding: 0.3em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+}
+}
