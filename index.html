@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <script type="module" src="javascript/components.js"></script>
     <script type="module" src="javascript/script.js"></script>
     <title>Typing Speed Test</title>
   </head>
@@ -14,11 +15,11 @@
     <main>
       <aside>
         <section class="details">
-          <p><span class="label">WPM:</span><span class="value">0</span></p>
+          <p><span class="label">WPM:</span><span class="value" id="wpm">0</span></p>
           <p>
-            <span class="label">Accuracy:</span><span class="value">100%</span>
+            <span class="label">Accuracy:</span><span class="value" id="accuracy">100%</span>
           </p>
-          <p><span class="label">Time:</span><span class="value">0:60</span></p>
+          <p><span class="label">Time:</span><span class="value" id="time">0:60</span></p>
         </section>
         <section class="controls-desktop">
           <div>
