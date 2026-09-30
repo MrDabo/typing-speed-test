@@ -135,7 +135,7 @@ function start() {
 
 function wordsPerMinutes(time, words) {
   const wpm = document.getElementById("wpm");
-  wpm.textContent = Math.trunc((60 * words) / time);
+  // wpm.textContent = Math.trunc((60 * words) / time);
 }
 
 function calculateAcurracy(paragraph, mistake) {
