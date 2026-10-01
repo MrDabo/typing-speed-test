@@ -149,7 +149,7 @@ function calculateAcurracy(paragraph, mistake) {
   }
   acurracy.textContent = `${acurracyValue}%`;
 }
-
+// hithrkdkdk
 function formatTime(time) {
   let hour = Math.floor(time / (60 * 60));
   let minutes = Math.floor(time / 60);
