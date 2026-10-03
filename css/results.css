@@ -2,6 +2,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 1.2rem;
+  justify-content: center;
+  text-align: center;
 }
 
 main figure {
@@ -12,26 +15,30 @@ main figure {
 
 main figure img {
   display: block;
-  width: 100px;
+  width: 90px;
+  padding-block: 1.5rem;
 }
 
-main figure figcaption {
+main h1 {
   font-weight: 700;
   font-size: 2rem;
+  line-height: 1.6;
 }
-
-main figure + p {
+main h1 + p {
+  margin-bottom: 1rem;
 }
 
 main section {
+
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 1rem;
-  padding: 1.2rem;
 }
 
 main section div {
+  text-align: left;
   border: 1px solid var(--Neutral-0);
   padding: 1.2rem;
   border-radius: 5px;
@@ -47,6 +54,8 @@ main section div .value {
 }
 
 main button {
+  margin: auto;
+  margin-top: 1rem;
   display: var(--Neutral-0);
   padding: 1rem 1.5rem;
   font: inherit;
@@ -63,9 +72,7 @@ main button {
     padding: 1.2rem;
   }
 
-  main section div{
+  main section div {
     width: 150px;
   }
-
-  
 }

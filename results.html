@@ -6,52 +6,33 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/results.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <script defer src="javascript/components.js"></script>
+    <script defer src="javascript/results.js"></script>
   </head>
   <body>
-    <header>
-      <figure class="logo">
-        <img
-          src="assets/images/logo-small.svg"
-          alt="logo"
-          title="Typing Speed Test"
-          class="mobile"
-        />
-        <img
-          src="assets/images/logo-large.svg"
-          alt="logo"
-          title="Typing Speed Test"
-          class="desktop"
-        />
-      </figure>
-
-      <figure class="best">
-        <img src="assets/images/icon-personal-best.svg" alt="" />
-        <figcaption>
-          <span>Personal</span>Best:<b id="best-value">92WPM</b>
-        </figcaption>
-      </figure>
-    </header>
     <main>
         <figure>
-            <img src="assets/images/icon-completed.svg" alt="">
-            <figcaption>Test Complete!</figcaption>
+            <img src="">
+            
         </figure>
-        <p>Solid run. Keep pusing to beat you high score.</p>
+        <h1></h1>
+        <p></p>
         <section>
             <div>
                 <p class="label">WPM:</p>
-                <p class="value">85</p>
+                <p class="value" id="wpm"></p>
             </div>
             <div>
                 <p class="label">Accuracy:</p>
-                <p class="value">90%</p>
+                <p class="value" id="accuracy"></p>
             </div>
             <div>
                 <p class="label">Characters:</p>
-                <p class="value">120/5</p>
+                <p class="value" id="characters"><span class="right green" ></span>/<span class="wrong red"></span></p>
             </div>
         </section>
-        <button>Go Again <img src="assets/images/icon-restart.svg" alt=""></button>
+        <button>Go Again </button>
     </main>
   </body>
 </html>

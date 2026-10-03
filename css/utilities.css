@@ -1,0 +1,24 @@
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+  text-decoration: underline;
+}
+.tabed {
+  color: rebeccapurple;
+  background-color: rgba(0, 0, 0, 0.074);
+}
+
+.yellow {
+  color: var(--Yellow);
+}
+
+.red {
+  color: var(--Red-500);
+}
+
+.green {
+  color: var(--Green-500);
+}

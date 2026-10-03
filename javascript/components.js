@@ -9,5 +9,6 @@ const loadComponents = async () => {
   const header = await response.text();
   document.querySelector("body").insertAdjacentHTML("afterbegin", header);
   const bestValue = document.getElementById("best-value");
-  bestValue.textContent = window.localStorage.getItem("best") || " 0WPM";
+  bestValue.textContent =
+    window.localStorage.getItem("personalBest") || " 0WPM";
 };

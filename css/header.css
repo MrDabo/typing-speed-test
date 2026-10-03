@@ -8,10 +8,6 @@ header .logo .desktop {
   display: none;
 }
 
-header .logo .mobile {
-  display: block;
-}
-
 header .best {
   display: flex;
   align-items: center;

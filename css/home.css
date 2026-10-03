@@ -12,11 +12,11 @@ main {
 aside {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin: 16px;
   border-bottom: 2px solid var(--Neutral-500);
   gap: 16px;
   padding-bottom: 16px;
+  justify-content: space-between;
 }
 
 aside .details {
@@ -47,7 +47,7 @@ aside .details p .value {
 
 aside .controls-mobile {
   display: flex;
-  gap: 15px;
+  gap: 16px;
 }
 
 aside .controls-mobile select {
@@ -88,16 +88,30 @@ aside .controls-desktop div button {
   font-size: 0.52rem;
   padding: 0.3em;
   border-radius: 5px;
+  cursor: pointer;
 }
 
-aside .controls-desktop div button.selected {
+aside .controls-desktop div button.selected{
+  color: var(--Blue-600);
+  border-color: var(--Blue-600);
+}
+
+aside .controls-desktop div button:hover{
   color: var(--Blue-400);
   border-color: var(--Blue-400);
 }
 
+aside .controls-desktop div button:focus{
+  outline-offset: 2px;
+  outline: 1px solid var(--Blue-400);
+}
+
 .text-area {
+  display: flex;
+  flex-direction: column;
   position: relative;
   flex-grow: 1;
+  align-items: center;
 }
 
 .text-area div {
@@ -109,47 +123,51 @@ aside .controls-desktop div button.selected {
   align-items: center;
   gap: 1rem;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.001);
-  backdrop-filter: blur(12px);
+   background: rgba(255, 255, 255, 0.015);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(1px);
 }
 
 .text-area div button {
   background-color: var(--Blue-600);
   color: var(--Neutral-0);
   border: none;
-  font: \inherit;
   padding: 1rem 1.2rem;
   font-size: 1.2rem;
   border-radius: 15px;
+  cursor: pointer;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.074);
 }
 
+.text-area div button:hover {
+  background-color: var(--Blue-400);
+}
+
+.text-area div button:focus {
+  background-color: var(--Blue-400);
+  outline: 2px solid var(--Blue-400);
+  outline-offset: 3px;
+}
+
 .text-area article {
-  padding: 1em;
+  margin: 0px 16px;
+  font-size: 1.8rem;
+  flex-grow: 1;
+  border-bottom: 2px solid var(--Neutral-400);
+}
+
+.text-area button {
+  margin: 25px auto;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--Neutral-0);
+  background-color: var(--Neutral-800);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 
-
-.correct {
-  color: green;
-}
-
-.incorrect {
-  color: red;
-  text-decoration: underline;
-}
-.tabed {
-  color: rebeccapurple;
-  background-color: rgba(0, 0, 0, 0.074);
-}
-
-.yellow {
-  color: var(--Yellow);
-}
-
-.red {
-  color: var(--Red-500);
-}
 
 @media (min-width: 600px) {
   aside {
